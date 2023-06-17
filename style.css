@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    transition-property: background color;
+    transition-duration: 600ms;
+}
+
+:root{
+    --background-form: #313660 ;
+    --background-button-2: #D9704E ;
+    --background: #28213E ;
+    --background-button-1: #f15b29;
+    --text: #e6e6e6;
+    --shadow-button: rgba(240, 248, 255, 0.603);
+}
+
+[data-theme="light"]{
+    --background-form: #31A7CB ;
+    --background-button-2: #DFE0B8 ;
+    --background: #125566 ;
+    --background-button-1: #eff0d8;
+    --text: #28213e;
+    --shadow-button: rgba(0, 0, 0, 0.603);
+}
+
+body{
+    height: 100vh;
+    background-color: var(--background);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    max-width: 77vw;
+    max-height: 80vh;
+    background-color: var(--background-form);
+    align-items: center;
+    justify-content: end;
+    border-radius: 50px;
+    gap: 1em;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px 0px;
+}
+
+#imagem{
+    width: 40%;
+    height: 100%;
+    flex-grow: 1;
+    background-image: url(assets/dark.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Corpo formulario */
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    gap: 4vh;
+}
+
+
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.form-body h1{
+    color: var(--text);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.3em;
+}
+
+.form-body input{
+    padding: 0.8em;
+    background-color: transparent;
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    box-shadow: none;
+    color: var(--text);
+    transition: 1s;
+}
+
+.form-body input:focus{
+    transition: 1s;
+    transition-duration: 500ms;
+    transition-property: box-shadow;
+    box-shadow: 2px 3px 20px var(--background-button-2);
+}
+
+/* botões */
+
+.form-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.form-buttons button{
+    padding: 1em;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid var(--text);
+    transition: 1s;
+    width: 8vw;
+}
+
+.form-buttons button:active{
+    transition: .5s;
+    transition-duration: 200ms;
+    transition-property: box-shadow;
+    box-shadow: 2px 2px 8px var(--background-button-2);
+}
+
+.submit-buttons button:nth-child(1):active{
+    transition: .5s;
+    transition-duration: 200ms;
+    transition-property: box-shadow;
+    box-shadow: 2px 2px 8px var(--shadow-button);
+}
+
+.submit-buttons{
+    display: flex;
+    gap: 2vw;
+}
+
+
+
+.submit-buttons button:nth-child(1){
+    width: 9vw;
+    background-image: linear-gradient(to right, var(--background-button-1), var(--background-button-2));
+    border: var(--background-button-1);
+}
+
+.form-buttons div:nth-child(2){
+    display: flex;
+    gap: 2vw;
+}
+
+/* checkbox */
+input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  .seletor-theme{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 45px;
+    height: 25px;
+    display: block;
+    border-radius: 100px;
+    border: var(--text) thin solid;
+    position: relative;
+  }
+  
+  label:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--text);
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    transition-timing-function: ease-in-out;
+  }
+  
+  label:active:after {
+    width: 20px;
+  }
+  
+@media (max-width: 800px) {
+    #imagem{
+        display: none;
+    }
+    .container-form{
+        width: 90%;
+    }
+}
