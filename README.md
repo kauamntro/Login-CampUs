@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="Login" src=".github/white.png" width="100%" border-radius="8px">
+  <img alt="Login" src=".github/light.png" width="100%" border-radius="8px">
   <img alt="Login" src=".github/dark.png" width="100%" border-radius="8px">
 </p>
 
