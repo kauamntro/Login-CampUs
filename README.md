@@ -25,4 +25,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 [Acesse o projeto nesse link](https://kauamntro.github.io/Login-Camp/)
 
 
-Feito com ♥ by Kauã
+Feito por Kauã 🪐
