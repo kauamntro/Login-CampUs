@@ -22,7 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
  Projeto para você que esta aprendendo programação, envolvendo Javascript. Se quiser ver mais conteúdo sobre programação segue la [@code.kaua](https://www.instagram.com/code.kaua/) e
-[Acesse o projeto nesse link](https://kauamntro.github.io/Login-Camp/)
+[Acesse o projeto nesse link](https://kauamntro.github.io/Login-CampUs/)
 
 
 Feito por Kauã 🪐
